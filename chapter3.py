@@ -30,15 +30,26 @@
 
 
 #Print type 
+
+#String
 A=12
+#Float
 B=13.01
+#Boolean
 D=True
+#NoneType
 E= None
+#String
 C="hello"
+#List
 F= [1,2,3,4,5]
+#Set
 G={1,"Hi",7,"Hello"}
+#Tuple
 H= (1,2,3,4,5)
+#Dictionary
 I= {1: "hello", 2: "hi", 3: "how are you"}
+#Complex
 J = 12 + 3j
 
 print(type(A))
