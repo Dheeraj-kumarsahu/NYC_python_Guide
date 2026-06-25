@@ -5,11 +5,13 @@
 a = "Hello how are you"
 
 #how 
+print(a[6:9])
 
 #you
+print(a[14:17])
 
 #Hello
-
+print(a[0:5])
 
 
 
