@@ -61,13 +61,13 @@ def Update():
 
 
         def menu():
-            print("Please select an operation:")
-            print("1. Append")
-            print("2. Overwrite")
-            print("3. Rename")
-            print('4. EXIT')
             while True:
-                choice = input("Enter your choice (1-3): ")
+                print("Please select an operation:")
+                print("1. Append")
+                print("2. Overwrite")
+                print("3. Rename")
+                print('4. EXIT')
+                choice = input("Enter your choice (1-4): ")
                 if choice == "1":
                     append()
                 elif choice == "2":
@@ -100,14 +100,14 @@ def Delete():
         print(f'Error occurred while deleting file:{e}')
 
 def Menu(): 
-    print("Please select an operation:")
-    print("1. Create")
-    print("2. Read")
-    print("3. Update")
-    print("4. Delete")
-    print("5. EXIT ")
-    while True:
-        choice = input("Enter your choice (1-4): ")
+    while True:  
+        print("Please select an operation:")
+        print("1. Create")
+        print("2. Read")
+        print("3. Update")
+        print("4. Delete")
+        print("5. EXIT ")
+        choice = input("Enter your choice (1-5): ")
         if choice == "1":
             Create()
         elif choice == "2":
