@@ -2,13 +2,18 @@
 # person can vote or not
 
 
-# age = int(input("please tell your age :- "))
-
-# if age >= 18:
-#     print("hello brother you can vote")
-# else:
-#     print("hello you can not vote sorry")
-
+try :
+    age = int(input("please tell your age :- "))
+    if age < 18:
+        print("hello brother you can not vote sorry")
+    elif age >= 18:
+        print("hello brother you can vote")
+    else:
+        print("hello you can not vote sorry")
+except ValueError:
+    print("please enter a valid age")
+except Exception as e:
+    print(f"an error occurred {e}")
 # rupees = int(input(" give money - "))
 
 
