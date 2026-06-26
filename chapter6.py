@@ -2,18 +2,18 @@
 # person can vote or not
 
 
-try :
-    age = int(input("please tell your age :- "))
-    if age < 18:
-        print("hello brother you can not vote sorry")
-    elif age >= 18:
-        print("hello brother you can vote")
-    else:
-        print("hello you can not vote sorry")
-except ValueError:
-    print("please enter a valid age")
-except Exception as e:
-    print(f"an error occurred {e}")
+'''    try :
+        age = int(input("please tell your age :- "))
+        if age < 18:
+           print("hello brother you can not vote sorry")
+        elif age >= 18:
+           print("hello brother you can vote")
+        else:
+            print("hello you can not vote sorry")
+    except ValueError:
+        print("please enter a valid age")
+    except Exception as e:
+        print(f"an error occurred {e}") '''
 # rupees = int(input(" give money - "))
 
 
@@ -47,16 +47,17 @@ except Exception as e:
 
 # print(ord("h"))
 # print(ord("H"))
-
-# gen = input("please tell your gender in (M or F) :- ")
-
-# if gen == "M" or gen == "m":
-#     print("hello sir ")
-# elif gen == "F" or gen == "f":
-#     print("hello mam")
-# else:
-#     print("others")
-
+try :
+    gen = input("please tell your gender in (M or F) :- ")
+    gen1=gen.lower()
+    if  gen1 == "m":
+        print("hello sir ")
+    elif gen1 == "f":
+        print("hello mam")
+    else:
+        print("others")
+except Exception as e:
+    print(e)
 
 # a = int(input("please tell your number :- "))
 
